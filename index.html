@@ -1,22 +1,70 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Joenuboenu</title>
-</head>
-
-
-<!-- change color -->
-<style>
-#myDiv {
-  border: thick solid blue;
-}
-</style>
+	<title>Sections Example</title>
+	<style>
+		body {
+			background-color: #50C878;
+		}
+		section {
+			display: none;
+		}
+		section.active {
+			display: block;
+		}
+		.button-container {
+			display: flex;
+			justify-content: space-between;
+			padding: 0 10px;
+		}
+		button {
+			flex: 1;
+			min-width: 0;
+			padding: 10px;
+			box-sizing: border-box;
+		}
+	</style>
 </head>
 <body>
+	<div class="button-container">
+		<button onclick="showSection(1)">Willkommen</button>
+		<button onclick="showSection(2)">Geschichte</button>
+		<button onclick="showSection(3)">Über Uns</button>
+		<button onclick="showSection(4)">Mitglieder</button>
+		<button onclick="showSection(5)">Kontakt</button>
+		
+	</div>
+	<section id="section1" class="active">
+		<h1>Willkommen</h1>
+		<p>Willkommen im Jönentum!</h1>
+<ol>
+	<p>Das Jönentum feiert einen legendären Schöpfer namens Joenu. Joenu ist weise, cool und erschuf alles, was die Menschen haben.</p>
+	<p>Museen in Zürich und Luzern, von Joenu selbst gestaltet, erzählen seine Geschichte.</p>
+</ol>
+<ol>
+	<p>Der Joenentum:</p>
+	<p>Die Joenisten glauben an Joenu als einzigen Gott. Sie sind friedlich, haben weltweit 205 Einrichtungen und bleiben lieber im Verborgenen. Eintritt erfordert einen Universitätsabschluss.</p>
+</ol>
+<ol>
+	<p>Tempel im Jönentum:</p>
+	<p>Die Tempel im Jönentum, als "Tempel der Energie" bekannt, sind Orte der spirituellen Versammlung.</p>
+	<p>Hier kommen Joenisten zusammen, um durch gemeinsame Meditation und Rituale ihre Verbindung mit der göttlichen Energie zu vertiefen.</p>
+	<p>Die Architektur der Tempel spiegelt die harmonische Philosophie des Jönentums wider, und ihre Atmosphäre fördert die innere Ruhe und spirituelle Reflexion.</p>
+</ol>
+<ol>
+	<p>Gebräuche im Jönentum:</p>
+	<p>Die Joenisten praktizieren achtsame Ernährung und Lebensweise, die von Joenu selbst eingeführt wurde.</p>
+	<p>Rituale, Feste und Zeremonien ehren den Zyklus der Natur und betonen die Verbindung aller Lebewesen.</p>
+	<p>Die Gemeinschaft pflegt einen respektvollen Umgang miteinander und setzt sich für Gerechtigkeit und Mitgefühl ein, inspiriert von den Lehren Joenus.</p>
+</ol>
+<ol>
+	<p>Willkommen in der Welt des Jönentums! Wenn du mehr erfahren möchtest, lies weiter und entdecke die einzigartige Geschichte von Joenu.</p>
 
-
-
-<!-- text -->
-<center>
+</p>
+	</section>
+	<section id="section2">
+		<h1>Geschichte</h1>
+		<p><center>
 <h1><u>Meister Joenu</u></h1>
 </center>
 <br /><il><b>Was sind seine Eigenschaften?</b></il>
@@ -77,13 +125,83 @@
 	und verwuestet. Es wurde aber noch nie ein Joenist verletzt oder getoetet, dank der gut organisierten<br />
 	Fluchtwegen der Joenisten. Viele Joenistische Kirchen sind unterirdisch verbunden und bilden einen genialen Fluchtweg.<br />
 	Da die Joenisten sehr friedlich sind, gehen sie auch nicht gross auf die Angriffe des Anti-Joenuclans<br />
-	ein. Sie bleiben lieber versteckt und verbessern ihre Fluchtwege weiterhin.
-	
-	<br /><br /><b> Bei Interesse am Joenentum.<br />
-	Kontakt: Joenuboenu@gmail.com</b>
-	
-	<img src="pica1-(6).png" alt="pica1" width="100" height="120">
-	
-	
-	
-	</body>
+	ein. Sie bleiben lieber versteckt und verbessern ihre Fluchtwege weiterhin.</p>
+	</section>
+	<section id="section3">
+		<h1>Über Uns</h1>
+		<p><h1>Unsere Leidenschaft fürs Klettern:</h1>
+	<ol>
+		<p>In unserer Gruppe schätzen einige Mitglieder die Herausforderungen des Kletterns und wandern, die dabei entsteht.</p>
+		<p>Unsere Mitglieder teilen eine gemeinsame Liebe für die vertikale Welt und die ständige Suche nach neuen Kletterrouten und Herausforderungen.</p>
+		<p>Auf keinen Fall üben wir dafür, dass wir im Kriegsfall gegen den Antijönuclan die gegnerische Festungen hochklettern können.</p>
+	</ol>
+	<h1>Aarau - Unsere Heimatstadt:</h1>
+	<ol>
+		<p>Wir erkunden gerne die charmante Stadt Aarau, die für ihre historische Altstadt und ihre vielfältigen Freizeitmöglichkeiten bekannt ist.</p>
+		<p>Von gemütlichen Cafés bis hin zu lebhaften Parks bietet Aarau den perfekten Rahmen für unsere gemeinsamen Unternehmungen.</p>
+	</ol>
+	<h1>Unsere Sommeroase an der Aare:</h1>
+	<ol>
+		<p>Im Sommer verlagern wir unser Gemeinschaftsleben an die Aare, wo wir einen idyllischen Ort geschaffen haben.</p>
+		<p>Mit Bänken, einer Grillstelle und einer einladenden Atmosphäre haben wir einen Platz zum Entspannen und Genießen geschaffen.</p>
+		<p>Dieser Ort dient als Treffpunkt für gemeinsame Aktivitäten und gesellige Abende am Flussufer.</p>
+	</ol>
+	<h1>Familienfreundlich und Gemeinschaftsorientiert:</h1>
+	<ol>
+		<p>Wir sind stolz darauf, eine familienfreundliche Gemeinschaft zu sein und haben viele kleine Kinder, die sich freiwillig in unseren Kellern aufhalten.</p>
+		<p>Diese kleinen Abenteurer bereichern unser Gemeinschaftsleben und bringen eine besondere Dynamik in unsere Aktivitäten.</p>
+	</ol></p>
+	</section>
+	<section id="section4">
+		<h1>Mitglieder</h1>
+		<p><h1>Aktuelle Mitglieder (Stand 10.02.2024):</h1>
+<ul>
+	<li>Alain (Antonius)</li>
+	<li>Basil</li>
+	<li>Gian</li>
+	<li>Haroon</li>
+	<li>Valentin</li>
+	<li>Levi</li>
+	<li>Jan</li>
+	<li>Jeron</li>
+	<li>Raoul (Passivmitglied)</li>
+</ul>
+<h2>Im Falle eines Krieges sind dies unsere Kriegsnamen (Geheimhaltungspflicht):</h2>
+<ul>
+	<li>Alain - Antonius</li>
+	<li>Basil - Briseis</li>
+	<li>Gian - Gideon</li>
+	<li>Haroon - Herakles</li>
+	<li>Valentin - Vasilios</li>
+	<li>Levi - Leandoros</li>
+	<li>Jan - Jakob</li>
+	<li>Jeron - Jocastus</li>
+	<li>Raoul - Rhadamanthys</li>
+
+
+</ul></p>
+	</section>
+	<section id="section5">
+		<h1>Kontakt</h1>
+		<p><h2>Bei Interesse am Joenentum:</h2>
+<p>Kontakt: <a href="mailto:Joenuboenu@gmail.com">Joenuboenu@gmail.com</a></p>
+<p>
+	Wir laden euch ein, Teil unserer wachsenden Gemeinschaft zu werden und die einzigartige Reise des Jönentums mit uns zu teilen.
+</p>
+</p>
+
+	<script>
+		function showSection(sectionId) {
+			// Hide all sections
+			const sections = document.getElementsByTagName('section');
+			for (let i = 0; i < sections.length; i++) {
+				sections[i].classList.remove('active');
+			}
+
+			// Show the selected section
+			const selectedSection = document.getElementById('section' + sectionId);
+			selectedSection.classList.add('active');
+		}
+	</script>
+</body>
+</html>
