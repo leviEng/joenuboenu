@@ -1,0 +1,58 @@
+.main-p{
+    color: rgb(31, 21, 138);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.test-div {
+
+   width: 100px; 
+   height: 100px;
+   background-color: red;
+   padding: 50px 0 0 50px;
+   border: blue solid 10px;
+   cursor: copy;
+
+}
+
+.header-main{
+    width: 100%;
+    height: 60px;
+    background-color: blue;
+
+}
+
+body:after{
+    content: url(../images/skeleton.png);
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+.image{
+
+    width: 500px;
+    margin-left: 200px;
+    
+}
+
+.image1{
+
+    width: 300px;
+    height: 500px;
+    background-image: url(../images/shrek.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center ;
+transition: all ease-in-out 100ms;
+
+}
+
+.image1:hover{
+
+ 
+    background-image: url(../images/skeleton.png);
+
+
+}

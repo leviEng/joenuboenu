@@ -1,0 +1,28 @@
+.header-main {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header-main div{
+height: 30px;
+}
+
+.header-main .div-1{
+    width: 100px;
+    background-color: rgb(39, 164, 164);
+}
+
+.header-main .div-2{
+    width: 100px;
+    background-color: rgb(145, 170, 22);
+}
+
+.header-main .div-3{
+    width: 100px;
+    background-color: rgb(218, 21, 21);
+}
