@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST["password"];
     if ($password == $correct_password) {
         $_SESSION["authenticated"] = true;
-        header("Location: mainpage.html");
+        header("Location: index.html");
         exit;
     } else {
         echo "Incorrect password. Please try again.";
